@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LeaveALetter.API\LeaveALetter.API.csproj" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeaveALetter.API.Data\LeaveALetter.API.Data.csproj" />
   </ItemGroup>
 
 </Project>
