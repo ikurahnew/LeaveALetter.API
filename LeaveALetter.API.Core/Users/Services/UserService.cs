@@ -1,4 +1,5 @@
-﻿using LeaveALetter.API.Data.Users.Entities;
+﻿using DependencyInjectionTool.Attributes;
+using LeaveALetter.API.Data.Users.Entities;
 using LeaveALetter.API.Data.Users.Repositories;
 
 namespace LeaveALetter.API.Core.Users.Services;
@@ -29,6 +30,7 @@ public interface IUserService
 /// The service that handles the <see cref="UserEntity"/> instances.
 /// </summary>
 /// <param name="userRepository">The repository responsible to access the user data.</param>
+[RegisteredDependency]
 public class UserService(IUserRepository userRepository) : IUserService
 {
     /// <inheritdoc />

@@ -1,4 +1,5 @@
-﻿using LeaveALetter.API.Data._Shared.Repositories;
+﻿using DependencyInjectionTool.Attributes;
+using LeaveALetter.API.Data._Shared.Repositories;
 using LeaveALetter.API.Data.Letters.Entities;
 using LeaveALetter.API.Data.Users.Entities;
 
@@ -34,7 +35,7 @@ public interface ILetterRepository : IEntityRepository<LetterEntity>
     ICollection<LetterEntity> GetByReciever(UserEntity user, UserEntity reciever, bool IncludeDeprecated = false);
 }
 
-
+[RegisteredDependency]
 public class LetterRepository : EntityRepository<LetterEntity>, ILetterRepository
 {
     private readonly List<LetterEntity> _database = new List<LetterEntity>{
