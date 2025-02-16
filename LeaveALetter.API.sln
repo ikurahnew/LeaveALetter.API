@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveALetter.API", "LeaveALetter.API\LeaveALetter.API.csproj", "{6EA5C3AF-4F7F-4289-B52B-8275C4F3834F}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveALetter.API.Core", "LeaveALetter.API.Core\LeaveALetter.API.Core.csproj", "{A77800EB-90D3-4B45-9DC3-FC176924EC57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveALetter.API.Data", "LeaveALetter.API.Data\LeaveALetter.API.Data.csproj", "{116FDD45-E659-4543-A7C1-D511703AAFEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{DCCBC4C2-D788-43D9-8002-712A9F75DEBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjectionTool", "DependencyInjectionTool\DependencyInjectionTool.csproj", "{9E021373-21F1-48EF-B15C-CF833A412993}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,10 @@ Global
 		{116FDD45-E659-4543-A7C1-D511703AAFEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{116FDD45-E659-4543-A7C1-D511703AAFEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{116FDD45-E659-4543-A7C1-D511703AAFEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E021373-21F1-48EF-B15C-CF833A412993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E021373-21F1-48EF-B15C-CF833A412993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E021373-21F1-48EF-B15C-CF833A412993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E021373-21F1-48EF-B15C-CF833A412993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A77800EB-90D3-4B45-9DC3-FC176924EC57} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{116FDD45-E659-4543-A7C1-D511703AAFEC} = {EE3E9ED6-8152-4E16-94DB-0928588C789D}
+		{9E021373-21F1-48EF-B15C-CF833A412993} = {DCCBC4C2-D788-43D9-8002-712A9F75DEBF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F4974066-626B-4179-B6D7-80B079FF1F17}

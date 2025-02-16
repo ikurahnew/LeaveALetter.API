@@ -13,7 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DependencyInjectionTool\DependencyInjectionTool.csproj" />
     <ProjectReference Include="..\LeaveALetter.API.Core\LeaveALetter.API.Core.csproj" />
+    <ProjectReference Include="..\LeaveALetter.API.Data\LeaveALetter.API.Data.csproj" />
   </ItemGroup>
 
 </Project>

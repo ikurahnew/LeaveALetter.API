@@ -1,4 +1,5 @@
-﻿using LeaveALetter.API.Data._Shared.Repositories;
+﻿using DependencyInjectionTool.Attributes;
+using LeaveALetter.API.Data._Shared.Repositories;
 using LeaveALetter.API.Data.Users.Entities;
 
 namespace LeaveALetter.API.Data.Users.Repositories;
@@ -35,6 +36,7 @@ public interface IUserRepository : IEntityRepository<UserEntity>
 /// <summary>
 /// Represents the accessing data for the user.
 /// </summary>
+[RegisteredDependency]
 public class UserRepository : EntityRepository<UserEntity>, IUserRepository
 {
     // TODO: Migrate data to access the data.
